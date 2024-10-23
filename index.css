@@ -1,0 +1,147 @@
+body {
+    margin: 0px;
+    background-color: #ECFDF5;
+    font-family: "Inter", sans-serif;
+}
+main {
+    display: block;
+    margin: 30px auto 0px auto;
+    padding: 60px;
+    width: 700px;
+}
+
+body.dark {
+    background-color: #1F2937;
+    } 
+body.dark #white-header {
+     color: white;
+}
+body.dark #green-header{
+    color: #4ADF86;
+}
+#white-header {
+    color: #2B283A;
+}
+#green-header {
+    color: #10B981;
+}
+p {
+    color: #6B7280;
+    font-weight: 300;
+}
+body.dark p {
+    color: #D5D4D8;
+}
+button {
+    background-color: #10B981;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 13px;
+    color:white;
+    font-weight: 300;
+    margin-top: 30px;
+    font-family: inherit;
+}
+.password-btn {
+    background-color: #273549;
+    color: #5DEF92;
+    width: 200px;
+    margin-right: 12px;
+    padding: 4px 9px;
+    height: 30px;
+    margin-top: 0;
+}
+body.dark .password-btn,
+body.dark #custom-tooltip,
+body.dark #secondCustom-tooltip{
+    color: #55F991;
+}
+hr { 
+    margin: 25px 0;
+    border-top: 1px solid #D5D4D8;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+body.dark hr {
+    border-top: 1px solid #2F3E53;
+
+}
+
+#custom-tooltip, #secondCustom-tooltip{
+    display: none;
+    padding: 6px 0px;
+    background-color: #273549;
+    width: 100px;
+    text-align: center;
+    margin: 8px auto;
+    border-radius: 4px;
+    color: #5DEF92;
+}
+
+.password-section{
+    display: flex;
+}
+* {box-sizing: border-box;}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.dark-mode-toggle {
+    margin: 20px 5% 0px 95%;
+}
+
+
+.checkbox-label {
+  background-color: #1F2937;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body.dark .checkbox-label {
+    background-color: #ECFDF5;
+
+}
+
+.checkbox-label .ball {
+  background-color: #ECFDF5;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+body.dark .checkbox-label .ball {
+    background-color: #1F2937;
+
+}
+
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+footer {
+    text-align: center;
+    border-top: 1px solid #1F2937;
+    background-color: #1F2937;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+#footer {
+    color:#10B981;
+
+}
+body.dark footer, body.dark #footer {
+    background-color:#ECFDF5;
+    color: #2B283A;
+}
